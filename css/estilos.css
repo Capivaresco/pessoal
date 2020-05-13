@@ -1,0 +1,109 @@
+/* "Soft" Reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Geral */
+body {
+    background-color: #002124;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    font-size: 13px;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Header ajustes */
+header {
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagens */
+.fundo-img{
+    background-image: url(../imagens/Sky.png);
+    filter: blur(8px);
+    height: 101%;
+    width: 101%;
+    position:fixed;
+    -webkit-filter: blur(8px);
+    z-index: -999;
+}
+
+.avatar-img {
+    border-radius: 100%;
+    display: block;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+    width: auto;
+}
+
+/* Menu */
+.menu {
+    height: 25px;
+}
+
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
+
+.menu ul {
+        display: flex;
+        justify-content: space-around;
+}
+
+
+.menu li {
+        list-style: none;
+
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.menu ul {
+    background-color: #11ffd5; 
+}
+
+/* Hiperlinks */
+a {
+    color: #112b36;
+    text-decoration: none;
+}
+
+a:hover {
+        text-decoration: underline;
+}
+
+/* Textos */
+.subtitulo-site,
+.texto-corrido,
+.titulo-site {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.titulo-site {
+    font-size: x-large;
+}
+
+.subtitulo-site {
+    font-size: large;
+    font-style: italic;
+}
