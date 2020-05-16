@@ -57,12 +57,12 @@ a:hover {
     gap: 0.1em;
     grid-template-columns: 10em 10em;
     justify-content: center;
-    opacity: 0;
+    opacity: 1;
 
-/*    animation: linear 2s animIcones;
+    animation: linear 2s animIcones;
 }
 
-@keyframes animIcones { Para terminar
+/* @keyframes animIcones { /* Para terminar 
     0% {
         opacity: 0;
     }
