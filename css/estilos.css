@@ -21,14 +21,55 @@ body {
 }
 
 /* Hiperlinks */
-a {
+.menu a {
     color: #112b36;
     text-decoration: none;
+    transition: background-color, color, 0.2s;
+}
+
+.menu a:hover {
+    background-color: #112b36ad;
+}
+
+a {
+    color: aquamarine;
 }
 
 a:hover {
-        text-decoration: underline;
+    /* text-decoration: underline; */
+    color: aquamarine;
 }
+
+
+.icones-princ {
+    text-align: center;
+    font-size: 85px;
+    list-style: none;
+    transition: transform 0.1s;
+}
+
+.icones-princ:hover {
+    transform: scale(1.1);
+}
+
+.incones {
+    display: grid;
+    gap: 0.1em;
+    grid-template-columns: 10em 10em;
+    justify-content: center;
+    opacity: 0;
+
+/*    animation: linear 2s animIcones;
+}
+
+@keyframes animIcones { Para terminar
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
 
 /* Leiaute ajustes */
 header {
@@ -38,9 +79,16 @@ header {
     align-items: center;
 }
 
+@media (min-width: 600px) {
+    header {
+        height: 88vh;
+    }
+}
+
+.secao-dois,
 .secao-um {
     background-color: rgba(0, 54, 54, 0.692);
-    height: 95vh;
+    min-height: 95vh;
 }
 
 /* Menu */
@@ -109,6 +157,7 @@ header {
     padding-left: 2em;
 }
 
+
 /* Imagens */
 .fundo-img{
     background-image: url(../imagens/Sky.png);
@@ -137,6 +186,7 @@ header {
 
 }
 
+.portifolio-img:active,
 .portifolio-img:hover {
     transform: scale(1.1);
 }
