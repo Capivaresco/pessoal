@@ -48,6 +48,7 @@ a:hover {
     transition: transform 0.1s;
 }
 
+.icones-princ:active,
 .icones-princ:hover {
     transform: scale(1.1);
 }
@@ -59,17 +60,7 @@ a:hover {
     justify-content: center;
     opacity: 1;
 
-    animation: linear 2s animIcones;
 }
-
-/* @keyframes animIcones { /* Para terminar 
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
 
 /* Leiaute ajustes */
 header {
@@ -85,7 +76,6 @@ header {
     }
 }
 
-.secao-dois,
 .secao-um {
     background-color: rgba(0, 54, 54, 0.692);
     min-height: 95vh;
@@ -94,6 +84,7 @@ header {
 /* Menu */
 .menu {
     height: 25px;
+    z-index: 1;
 }
 
 
