@@ -33,10 +33,11 @@ body {
 
 a {
     color: aquamarine;
+    text-decoration: none;
 }
 
 a:hover {
-    /* text-decoration: underline; */
+    text-decoration: underline;
     color: aquamarine;
 }
 
@@ -72,13 +73,21 @@ header {
 
 @media (min-width: 600px) {
     header {
-        height: 88vh;
+        height: 100vh;
     }
+}
+
+.secao-one,
+.secao-um {
+    min-height: 95vh;
+}
+
+.secao-one {
+    background-color: rgba(0, 54, 36, 0.692);
 }
 
 .secao-um {
     background-color: rgba(0, 54, 54, 0.692);
-    min-height: 95vh;
 }
 
 /* Menu */
@@ -120,15 +129,29 @@ header {
 /* Textos */
 .subtitulo-site,
 .texto-corrido,
+.texto-pp,
+.titulo-secao,
 .titulo-site {
     color: whitesmoke;
+}
+
+.subtitulo-site,
+.texto-pp,
+.titulo-secao,
+.titulo-site {
     text-align: center;
 }
 
+.titulo-secao,
 .titulo-site {
     font-family: 'Rajdhani', sans-serif;
     font-size: 40px;
     padding-top: 0.7em;
+}
+
+.titulo-secao {
+    padding-top: 0.7em;
+    padding-bottom: 0.2em;
 }
 
 .subtitulo-site {
@@ -136,9 +159,25 @@ header {
     font-size: large;
 }
 
+.texto-pp,
 .texto-corrido {
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.secao-one p {
+    text-align: justify;
+    text-indent: 1em;
+    margin-bottom: 0.4em;
+    
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
 }
 
 .texto-portifolio {
@@ -170,11 +209,35 @@ header {
     width: auto;
 }
 
+#minha-foto {
+    text-align: center;
+    float: none;
+   
+}
+
+#a-foto {
+    height: 18em;
+    
+}
+
+@media (min-width: 477px) {
+    #a-foto {
+        /* margin: 0em; */
+        /* -- */
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    #minha-foto {
+        float: right;
+        /* -- */
+
+    }
+}
+
 .portifolio-img {
     height: auto;
     transition: transform .1s;
     width: 330px;
-
 }
 
 .portifolio-img:active,
